@@ -139,7 +139,7 @@ header {
 
 
 
-/* 
+
 .input-section {
   display: flex;
   gap: 10px;
@@ -173,4 +173,4 @@ li {
 .completed {
   text-decoration: line-through;
   color: gray;
-} */
+}
