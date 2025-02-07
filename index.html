@@ -3,34 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Web design assignment</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="login-container">
-    <div class="login-box">
-      <h2>Login</h2>
-      <form>
-        <div class="input-container">
-          <span class="icon">👤</span>
-          <input type="text" placeholder="Username" required>
-        </div>
-        <div class="input-container">
-          <span class="icon">🔒</span>
-          <input type="password" placeholder="Password" required>
-        </div>
-        <div class="options">
-          <label>
-            <input type="checkbox"> Remember me
-          </label>
-          <a href="#">Forgot password?</a>
-        </div>
-        <button type="submit" class="btn-login">Login</button>
-        <p class="register-link">
-          Don't have an account? <a href="#">Register</a>
-        </p>
-      </form>
+  <header>
+    <img src="photo_2025-02-07_09-24-04.jpg" alt="logo">
+    <h1 id="main-heading">. Welcome to Laza Technology Media</h1>
+  </header>
+
+  <div class="container">
+    <p class="styled-paragraph">
+      Subscribe To Laza Technology Media Youtube Channel
+    </p>
+
+    <div class="two-column">
+      <div class="column">
+        <h2>Web Technologies</h2>
+        <ul class="styled-list">
+          <li>HTML is the foundation of webpages.</li>
+          <li>CSS styles and enhances presentation.</li>
+          <li>JavaScript adds interactivity.</li>
+        </ul>
+        <a href="https://youtube.com/channel/UChmK8bCXtx0HBRLT9NjOdKA?sub_confirmation=1" target="_blank">Click here to join Laza Technology Media Youtube Channel</a> <br><br>
+        
+        <div class="calculator">
+          <input type="text" class="display" id="display" disabled>
+          <div class="buttons">
+            <button onclick="appendValue('+')">+</button>
+            <button onclick="appendValue('-')">-</button>
+              <button onclick="appendValue('/')">/</button>
+              <button onclick="appendValue('*')">*</button>
+              
+  
+              <button onclick="appendValue('7')">7</button>
+              <button onclick="appendValue('8')">8</button>
+              <button onclick="appendValue('9')">9</button>
+              <button onclick="clearDisplay()" class="clear">C</button>
+              
+  
+              <button onclick="appendValue('4')">4</button>
+              <button onclick="appendValue('5')">5</button>
+              <button onclick="appendValue('6')">6</button>
+              <button onclick="calculateResult()" class="equal">=</button>
+  
+              <button onclick="appendValue('1')">1</button>
+              <button onclick="appendValue('2')">2</button>
+              <button onclick="appendValue('3')">3</button>
+              <button onclick="appendValue('0')" style="grid-column: span 2;">0</button>
+              <button onclick="appendValue('.')">.</button>
+          </div>
+      </div>
+      </div>
+      <div class="column">
+        <h2>Sample Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Abebe Kebede</td>
+              <td>25</td>
+              <td>Mekelle</td>
+            </tr>
+            <tr>
+              <td>Letay Hailu</td>
+              <td>30</td>
+              <td>Adigrat</td>
+            </tr>
+            <tr>
+              <td>Zemzem Mehamed</td>
+              <td>28</td>
+              <td>Adwa</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Registration Form</h2>
+    <form action="/submit" method="POST">
+      <label for="username">User Name:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your name" required>
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <br><br>
+
+      <button class="button" type="submit">Submit</button>
+    </form>
+      </div>
     </div>
   </div>
+
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Enter a new task">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+    <ul id="taskList"></ul>
+</div>
+
+  <footer>
+    <p>© 2025 LAZA TECHNOLOGIES</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+    
